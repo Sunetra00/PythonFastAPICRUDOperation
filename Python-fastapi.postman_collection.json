@@ -88,7 +88,7 @@
 						}
 					}
 				},
-				"url": "http://127.0.0.1:8000/users"
+				"url": "http://127.0.0.1:8000/users/1"
 			},
 			"response": [
 				{
@@ -312,6 +312,46 @@
 					],
 					"cookie": [],
 					"body": "{\n    \"detail\": \"User not found\"\n}"
+				},
+				{
+					"name": "http://127.0.0.1:8000/users/5",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 5,\r\n    \"name\": \"Updated02 Name\",\r\n    \"email\": \"updatedemail02@example.com\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8000/users/5"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Tue, 17 Dec 2024 08:14:16 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "69"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 5,\n    \"name\": \"Updated02 Name\",\n    \"email\": \"updatedemail02@example.com\"\n}"
 				}
 			]
 		},
@@ -396,6 +436,47 @@
 						{
 							"key": "date",
 							"value": "Fri, 13 Dec 2024 12:40:25 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "66"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"name\": \"Updated Name\",\n    \"email\": \"sunetra_updated@gmail.com\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://127.0.0.1:8000/users/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/users/1"
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:8000/users/1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://127.0.0.1:8000/users/1"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Tue, 17 Dec 2024 08:13:09 GMT"
 						},
 						{
 							"key": "server",
